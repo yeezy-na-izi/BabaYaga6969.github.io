@@ -1,5 +1,5 @@
 * {
-    margin: 10px;
+    margin: 0;
     padding: 0;
     font-family: 'Supermercado One', cursive;
 
@@ -8,9 +8,9 @@
 .Header {
     min-height: 100vh;
     width: 100%;
-    /*background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(4, 9, 30, 0)), url('preview.gif');*/
+    background-image: radial-gradient(rgba(0, 0, 0, 1), rgba(4, 9, 30, 0)), url('preview.gif');
     background-position: center;
-    background-size: cover;
+    background-size: 110%;
     position: relative;
 }
 
@@ -19,10 +19,6 @@ nav {
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
-}
-
-nav img {
-    width: 150px;
 }
 
 .Links {
@@ -41,22 +37,39 @@ nav img {
 .Links ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 20px;2
 }
 
 .Links ul li::after {
     content: '';
+    color: white;
     width: 0;
     height: 2px;
     background: rgba(143, 0, 255, 0.73);
     display: block;
-    transition: 0.25s;
+    transition: 1s;
     margin: auto;
 }
 
 .Links ul li:hover::after {
     width: 100%;
 }
+
+.Links ul li:hover::before {
+    content: '→ ';
+    font-size: 1.3rem;
+    display: inline;
+    background: transparent;
+    color: #fff;
+}
+
+/*.arrow:hover::before {*/
+/*    content: '→ ';*/
+/*    display: inline;*/
+/*    background: transparent;*/
+/*    transition: transform 0.5s;*/
+
+/*}*/
 
 .Intro {
     color: #fff;
@@ -80,7 +93,7 @@ nav img {
 
 a img{
     position: absolute;
-    width: 200px;
+    width: 150px;
 
 }
 
